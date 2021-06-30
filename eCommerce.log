@@ -1,0 +1,58 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.2.RELEASE)
+
+2021-06-29 15:29:03.613  INFO 13132 --- [           main] com.example.demo.SareetaApplication      : Starting SareetaApplication on Dan with PID 13132 (C:\Users\Dan\Desktop\JAVA COURSE UDACITY\nd035-c4-Security-and-DevOps-master\starter_code\target\classes started by Dan in C:\Users\Dan\Desktop\JAVA COURSE UDACITY\nd035-c4-Security-and-DevOps-master)
+2021-06-29 15:29:03.617  INFO 13132 --- [           main] com.example.demo.SareetaApplication      : No active profile set, falling back to default profiles: default
+2021-06-29 15:29:04.550  INFO 13132 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-29 15:29:04.651  INFO 13132 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 87ms. Found 4 JPA repository interfaces.
+2021-06-29 15:29:05.707  INFO 13132 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-06-29 15:29:05.721  INFO 13132 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-29 15:29:05.721  INFO 13132 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-06-29 15:29:05.916  INFO 13132 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-06-29 15:29:05.917  INFO 13132 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2179 ms
+2021-06-29 15:29:06.234  INFO 13132 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-29 15:29:06.329  INFO 13132 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.18.Final
+2021-06-29 15:29:06.530  INFO 13132 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-06-29 15:29:06.684  INFO 13132 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-29 15:29:06.822  INFO 13132 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-29 15:29:06.843  INFO 13132 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-06-29 15:29:07.819  INFO 13132 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-29 15:29:07.831  INFO 13132 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-29 15:29:08.238  WARN 13132 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-29 15:29:08.867  INFO 13132 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1cfa7ee0, org.springframework.security.web.context.SecurityContextPersistenceFilter@1dcad16f, org.springframework.security.web.header.HeaderWriterFilter@6a116354, org.springframework.web.filter.CorsFilter@612290d, org.springframework.security.web.authentication.logout.LogoutFilter@5f781173, com.example.demo.security.JWTAuthenticationFilter@57cff804, com.example.demo.security.JWTAuthenticationVerficationFilter@2f39b534, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4738131e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1a77eb6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@60fbc34d, org.springframework.security.web.session.SessionManagementFilter@34e07e65, org.springframework.security.web.access.ExceptionTranslationFilter@4682882a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@288b73c1]
+2021-06-29 15:29:08.938  INFO 13132 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-29 15:29:09.112  INFO 13132 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-29 15:29:09.132  INFO 13132 --- [           main] com.example.demo.SareetaApplication      : Started SareetaApplication in 6.292 seconds (JVM running for 7.579)
+2021-06-29 15:33:37.555  INFO 13132 --- [nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-29 15:33:37.555  INFO 13132 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-06-29 15:33:37.562  INFO 13132 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2021-06-29 15:38:54.819  INFO 13132 --- [nio-8080-exec-5] c.e.demo.controllers.UserController      : Creating user Laura
+2021-06-29 15:38:54.869  INFO 13132 --- [nio-8080-exec-5] c.e.demo.controllers.UserController      : Cart created for the new customer.
+2021-06-29 15:38:55.001  INFO 13132 --- [nio-8080-exec-5] c.e.demo.controllers.UserController      : User Laura created successfully
+2021-06-29 15:39:39.355  INFO 13132 --- [nio-8080-exec-6] c.e.demo.controllers.UserController      : Creating user Dan
+2021-06-29 15:39:39.356  INFO 13132 --- [nio-8080-exec-6] c.e.demo.controllers.UserController      : Cart created for the new customer.
+2021-06-29 15:39:39.485  INFO 13132 --- [nio-8080-exec-6] c.e.demo.controllers.UserController      : User Dan created successfully
+2021-06-29 15:40:15.462  INFO 13132 --- [nio-8080-exec-7] c.e.demo.controllers.UserController      : Creating user Daria
+2021-06-29 15:40:15.464  INFO 13132 --- [nio-8080-exec-7] c.e.demo.controllers.UserController      : Cart created for the new customer.
+Error - Either length is less than 7 or pass and conf pass do not match. Unable to create 
+2021-06-29 15:40:55.390  INFO 13132 --- [nio-8080-exec-9] c.e.demo.controllers.UserController      : Creating user Daria
+2021-06-29 15:40:55.393  INFO 13132 --- [nio-8080-exec-9] c.e.demo.controllers.UserController      : Cart created for the new customer.
+Error - Either length is less than 7 or pass and conf pass do not match. Unable to create 
+2021-06-29 15:42:36.462  INFO 13132 --- [nio-8080-exec-1] c.e.demo.controllers.UserController      : Creating user Daria
+2021-06-29 15:42:36.464  INFO 13132 --- [nio-8080-exec-1] c.e.demo.controllers.UserController      : Cart created for the new customer.
+2021-06-29 15:42:36.583  INFO 13132 --- [nio-8080-exec-1] c.e.demo.controllers.UserController      : User Daria created successfully
+2021-06-29 15:51:32.632  WARN 13132 --- [io-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<com.example.demo.model.persistence.Cart> com.example.demo.controllers.CartController.addTocart(com.example.demo.model.requests.ModifyCartRequest)]
+2021-06-29 15:54:02.280  WARN 13132 --- [nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<com.example.demo.model.persistence.Cart> com.example.demo.controllers.CartController.removeFromcart(com.example.demo.model.requests.ModifyCartRequest)]
+2021-06-29 15:57:11.914  INFO 13132 --- [nio-8080-exec-4] c.e.demo.controllers.UserController      : Request to submit order for user: Dan
+2021-06-29 15:57:11.931  INFO 13132 --- [nio-8080-exec-4] c.e.demo.controllers.UserController      : Order for user Dan submitted successfully.
+2021-06-29 15:57:36.586  INFO 13132 --- [nio-8080-exec-5] c.e.demo.controllers.UserController      : Request to submit order for user: Daniel
+2021-06-29 15:59:58.938  WARN 13132 --- [nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2021-06-29 16:00:20.240  INFO 13132 --- [nio-8080-exec-9] c.e.demo.controllers.UserController      : Order request received for user: AAA
+2021-06-29 16:00:20.242 ERROR 13132 --- [nio-8080-exec-9] c.e.demo.controllers.UserController      : User AAA not found. Cannot submit order.
+2021-06-29 16:30:33.730  WARN 13132 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m56s116ms495µs400ns).
