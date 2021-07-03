@@ -55,6 +55,7 @@ public class OrderControllerTest {
 
         user.setCart(cart);
         when(userRepository.findByUsername("test")).thenReturn(user);
+        when(userRepository.findByUsername("UserNotFound")).thenReturn(null);
     }
 
     @Test
@@ -74,6 +75,22 @@ public class OrderControllerTest {
         ResponseEntity<UserOrder> response = orderController.submit("testUser");
         assertNotNull(response);
         assertEquals(404, response.getStatusCodeValue());
+    }
+    
+    @Test
+    public void get_order_for_users() {
+        ResponseEntity<List<UserOrder>> responseEntity = orderController.getOrdersForUser("test");
+        assertNotNull(responseEntity);
+        assertEquals(200, responseEntity.getStatusCodeValue());
+        List<UserOrder> userOrderList = responseEntity.getBody();
+        assertNotNull(userOrderList);
+    }
+
+    @Test
+    public void order_for_non_existing_user() {
+        ResponseEntity<UserOrder> listResponseEntity = orderController.submit("UserNotFound");
+        assertNotNull(listResponseEntity);
+        assertEquals(404, listResponseEntity.getStatusCodeValue());
     }
 
 }
