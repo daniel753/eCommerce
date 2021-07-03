@@ -78,6 +78,15 @@ public class UserControllerTest {
         assertNotNull(response);
         assertEquals(400, response.getStatusCodeValue());
     }
+    
+     @Test
+    public void check_non_existing_user() {
+        String username = "NoUser";
+
+        final ResponseEntity<User> response = userController.findByUserName(username);
+        assertNotNull(response);
+        assertEquals(404, response.getStatusCodeValue());
+    }
 
     @Test
     public void findBy_username_happy_path() {
